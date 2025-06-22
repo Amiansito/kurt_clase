@@ -1,0 +1,129 @@
+/* Fondo y layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #ffe6f0, #fff);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Contenedor del formulario */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(214, 51, 132, 0.2);
+    width: 100%;
+    max-width: 420px;
+    z-index: 10;
+    position: relative;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #d63384;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Formulario */
+form {
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #f8d7e8;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #fff0f5;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Botón enviar */
+input[type="submit"] {
+    background-color: #d63384;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #b81e6f;
+}
+
+/* Enlace cancelar */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #6f42c1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Corazones animados */
+.heart {
+    position: absolute;
+    font-size: 32px;
+    opacity: 0.2;
+    animation: float 10s linear infinite;
+    pointer-events: none;
+}
+
+/* Varias posiciones iniciales y animaciones */
+.heart:nth-child(1) { left: 10%; animation-delay: 0s; }
+.heart:nth-child(2) { left: 25%; animation-delay: 2s; }
+.heart:nth-child(3) { left: 40%; animation-delay: 4s; }
+.heart:nth-child(4) { left: 60%; animation-delay: 1s; }
+.heart:nth-child(5) { left: 75%; animation-delay: 3s; }
+.heart:nth-child(6) { left: 90%; animation-delay: 5s; }
+
+@keyframes float {
+    0% {
+        bottom: -50px;
+        transform: translateX(0) scale(1);
+        opacity: 0.2;
+    }
+    50% {
+        transform: translateX(20px) scale(1.2);
+        opacity: 0.4;
+    }
+    100% {
+        bottom: 100%;
+        transform: translateX(-20px) scale(1);
+        opacity: 0;
+    }
+}

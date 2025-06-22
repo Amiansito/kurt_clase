@@ -8,6 +8,16 @@
 <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+    <!-- Corazones flotantes -->
+<span class="heart">💖</span>
+<span class="heart">💗</span>
+<span class="heart">💘</span>
+<span class="heart">💕</span>
+<span class="heart">💞</span>
+<span class="heart">💓</span>
+
+<!-- Contenido principal -->
+<div class="container">
     <h1>Lista de Productos</h1>
 <a href="crear.php">Agregar Nuevo Producto</a>
 <br><br>
@@ -43,4 +53,5 @@ confirm(\"¿Estás seguro?\")'>Eliminar</a>
 }
 ?>
 </table>
+</div>
 </body>
