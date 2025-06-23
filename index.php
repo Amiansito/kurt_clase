@@ -43,7 +43,7 @@ echo "<tr>
 <td>{$fila['stock']}</td>
 <td>{$fila['fecha_creacion']}</td>
 <td>
-<a href='editar.php?id={$fila['id']}'>Editar</a> |
+<a href='edit.php?id={$fila['id']}'>Editar</a> |
 <a href='eliminar.php?id={$fila['id']}' onclick='return
 
 confirm(\"¿Estás seguro?\")'>Eliminar</a>

@@ -43,6 +43,16 @@ if (!$producto) {
     <title>Editar Producto</title>
 </head>
 <body>
+        <!-- Corazones flotantes -->
+<span class="heart">💖</span>
+<span class="heart">💗</span>
+<span class="heart">💘</span>
+<span class="heart">💕</span>
+<span class="heart">💞</span>
+<span class="heart">💓</span>
+
+<!-- Contenido principal -->
+<div class="container">
     <h1>Editar Producto</h1>
     <form method="post">
         <input type="hidden" name="id" value="<?= $producto['id'] ?>">
@@ -66,5 +76,6 @@ if (!$producto) {
         <input type="submit" value="Acualizar Producto">
         <a href="index.php">Cancelar</a>
     </form>
+</div>
 </body>
 </html>
